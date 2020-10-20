@@ -68,13 +68,13 @@ while True:
 
         if blinking_ratio > 5.7:
             i = i + 1
-            # Start action such a alarm or led on
+            # Start action = such an alarm or led on
             if(i > 5):
                 cv2.putText(frame, "Sleep", (400, 350), font, 6, (0, 0, 255))
 
 
         if blinking_ratio < 6:
-            # Stop action such a alarm or led on
+            # Stop action = such an alarm or led off
             i = 0
 
     cv2.imshow("Frame", frame)
